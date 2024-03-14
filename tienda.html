@@ -1,36 +1,27 @@
-<!DOCTYPE html> <!-- esto significa que versión de html se esta usando, con poner html se entiende que es html5 -->
-<html lang="es"> <!-- apertura html, con el atributo (lang) lenguaje en el que esta -->
-<head> <!-- información meta, información sobre el sitio (IMPORTANTE PARA EL NAVEGADOR) -->
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
     
-    <meta charset="UTF-8"> <!-- está linea dice que nuestra página web usa caracteres especiales (ñ, tildes, etc) -->
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>E-Commerce - Inicio</title> <!-- nombre del sitio -->
+    <title>E-Commerce - Tienda</title> 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"> <!-- para enlazar hoja de estilos con html, rel: que relación tiene lo que estoy linkeando-->
    
-    <!--  para usar CSS dentro del documento de HTML se usa la etiqueta style en el head, ejemplo:
-        <style>
-            h1 {
-                font-size: 20px;
-                color: blue;
-            }
-        </style>
-    -->
-
 </head>
-<body> <!-- lo que se va a ver en pantalla -->
+<body> 
     
-    <header> <!-- cabeza, parte superior de un sitio web o elemento -->
+    <header> 
         <a href="index.html">
             <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1> <!-- heading, h1 (puede haber solo uno) a h6, mientras mas alto el numero, menos importante la información -->
         </a>
     </header>
     
     <div class="navegador-principal">
-        <nav class="nav-principal contenedor"> <!-- grupo de enlaces, barra de navegación -->
+        <nav class="nav-principal contenedor"> 
             <a href="index.html">Inicio</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="tienda.html">Tienda</a>
@@ -40,44 +31,7 @@
         </nav>   
     </div>
     
-    <div class="hero"></div>
-
-    <section class="contenedor categorias"><!-- cuando el primer hijo es un heading o introduce a una nueva sección -->
-        <h2 class="text-center">Categorias de Productos</h2>
-        
-        <div class="listado-categorias">
-            <div class="categoria"> <!-- elemento genérico que agrupa -->
-                <img src="img/categoria1.jpg" alt="Imagen Categoria"> <!-- etiqueta para agregar imagenes, no tiene cierre, lleva los atributos src (source) y alt (texto alternativo)-->
-                <a href="#">Oficina</a> <!-- etiqueta de enlace, dentro se pueden poner imagenes, texto, etc; con el atributo href, dentro se pone a que página queremos ir al clickear -->    
-            </div>
-
-            <div  class="categoria"> <!-- elemento genérico que agrupa -->
-                <img src="img/categoria2.jpg" alt="Imagen Categoria"> <!-- etiqueta para agregar imagenes, no tiene cierre, lleva los atributos src (source) y alt (texto alternativo)-->
-                <a href="#">Hogar</a> <!-- etiqueta de enlace, dentro se pueden poner imagenes, texto, etc; con el atributo href, dentro se pone a que página queremos ir al clickear -->    
-            </div>
-
-            <div class="categoria"> <!-- elemento genérico que agrupa -->
-                <img src="img/categoria3.jpg" alt="Imagen Categoria"> <!-- etiqueta para agregar imagenes, no tiene cierre, lleva los atributos src (source) y alt (texto alternativo)-->
-                <a href="#">Cocina</a> <!-- etiqueta de enlace, dentro se pueden poner imagenes, texto, etc; con el atributo href, dentro se pone a que página queremos ir al clickear -->    
-            </div>
-        </div>
-        
-        
-    </section>
-
-    <section class="sobre-nosotros">
-        <div class="contenedor sobre-nosotros-contenido">
-            <div class="texto-nosotros">
-                <h2>Sobre Nosotros</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur reiciendis sint nulla iste 
-                voluptate in error, adipisci sunt unde enim aperiam delectus, magnam soluta debitis quisquam,
-                ullam eum eaque nihil!</p>
-            </div>
-        </div> 
-    </section>
-
-    <main class="contenido-principal contenedor">  <!-- contenido principal de un archivo .html, solo uno por página -->   
-        
+    <main class="contenido-principal contenedor">
         <h2 class="text-center">Nuestros Productos</h2>
         <div class="listado-productos">
             <div class="producto">
@@ -153,13 +107,10 @@
             </div> <!-- producto -->
 
         </div> <!-- fin del listado de productos -->
-    
+
     </main>
-   
 
-    
-
-    <footer class="site-footer"> <!-- pie de página o elemento -->
+    <footer class="site-footer"> 
         <div class="footer-grid contenedor">
             <div>
                 <h3>Categorias</h3>

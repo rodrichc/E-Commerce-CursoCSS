@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>E-Commerce - Contacto</title> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"> <!-- para enlazar hoja de estilos con html, rel: que relación tiene lo que estoy linkeando-->
+   
+</head>
+<body> 
+    
+    <header> 
+        <a href="index.html">
+            <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1> <!-- heading, h1 (puede haber solo uno) a h6, mientras mas alto el numero, menos importante la información -->
+        </a>
+    </header>
+    
+    <div class="navegador-principal">
+        <nav class="nav-principal contenedor"> 
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>   
+    </div>
+    
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus Datos</legend>
+
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input class="input" type="text" placeholder="Colocá tu nombre" id="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <input class="input" id="asunto" type="text" placeholder="Tu Asunto" required>
+                </div>
+                <div class="campo">
+                    <label for="mail">Tu E-Mail</label>
+                    <input class="input" type="email" placeholder="Tú E-Mail" id="mail" required>
+                </div>
+                <div class="campo">
+                    <label for="tel">Teléfono: </label>
+                    <input class="input" type="tel" placeholder="Tú Teléfono" id="tel" required>
+                </div>
+                <div class="campo">
+                    <label for="msj">Mensaje</label>
+                    <textarea class="input" id="msj" cols="30" rows="10" required></textarea>
+                </div>   
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+            <div class="campo">
+                <label for="pais">País</label>
+                <select class="input" id="pais" required>
+                    <option value="" selected disabled>-- Seleccioné --</option>
+                    <option value="AR">Argentina</option>
+                    <option value="UY">Uruguay</option>
+                    <option value="MX">México</option>
+                    <option value="CO">Colombia</option>
+                    <option value="PR">Perú</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>información Extra</legend>
+
+            <div class="campo">
+                <label for="cliente">Cliente</label>
+                <input type="radio" id="cliente" name="tipo" required>
+            </div>
+
+            <div class="campo">
+                <label for="proveedor">Proveedor</label>
+                <input type="radio" id="proveedor" name="tipo" required>
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoría de Interés</label>
+                <input class="input" list="categorias" name="categorias" required>
+                <datalist id="categorias">
+                    <option value="Cocina"></option>
+                    <option value="Exterior"></option>
+                    <option value="Dormitorios"></option>
+                    <option value="Comedor"></option>
+                    <option value="Palco"></option>
+                </datalist>
+            </div>
+        </fieldset>
+        
+        <input class="btn" type="submit" value="Enviar Formulario">
+        </form>
+    </main>
+
+    <footer class="site-footer"> 
+        <div class="footer-grid contenedor">
+            <div>
+                <h3>Categorias</h3>
+
+                <nav>
+                    <a href="">Cocina</a>
+                    <a href="">Oficina</a>
+                    <a href="">Jardín</a>
+                    <a href="">Garaje</a>
+                    <a href="">Dormitorios</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre Nosotros</h3>
+                
+                <nav>
+                    <a href="">Nuestra Historia</a>
+                    <a href="">Misión, Visión y Valores</a>
+                    <a href="">Carreras</a>
+                    <a href="">Política de Privacidad</a>
+                    <a href="">Términos del Servicio</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+
+                <nav>
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Ayuda en línea</a>
+                    <a href="">Confianza y seguridad</a>
+                </nav>
+            </div>
+        </div>
+       
+        
+        <p class="copyright">Todos los derechos reservados ©</p>
+    
+    </footer>
+
+    
+
+   
+</body>
+</html>
